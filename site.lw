@@ -1,9 +1,17 @@
 lw 1
-site "Blue Team Hub"
-owner ed25519:AAAA...
-channel general  /api/general
+site "Northgate Hub"
+owner ed25519:REPLACE_WITH_OWNER_PUBLIC_KEY
+
+gate challenge /auth/challenge
+gate verify /auth/verify
+onfail script /js/logout.js
+
+channel general /api/general
 channel advisories /api/advisories
-peer lw://node2.example.org:8443
+
 script frontend /static/app.js
 endpoint backend /api
-sig ed25519:BBBB...
+
+peer lw://node2.example.org:8443
+
+sig ed25519:REPLACE_WITH_SIGNATURE
