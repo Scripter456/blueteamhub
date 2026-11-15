@@ -1,0 +1,9 @@
+lw 1
+site "Blue Team Hub"
+owner ed25519:AAAA...
+channel general  /api/general
+channel advisories /api/advisories
+peer lw://node2.example.org:8443
+script frontend /static/app.js
+endpoint backend /api
+sig ed25519:BBBB...
