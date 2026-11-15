@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northgate Security Notes</title>
+
+  <!-- Lightweb discovery: normal browsers ignore unknown rel values.
+       Fireseed reads this and fetches the manifest. -->
+  <link rel="lightweb" href="/site.lw">
+
+  <style>
+    :root { color-scheme: light dark; --bg: #ffffff; --fg: #1a1a1a; --muted: #666; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #14161a; --fg: #e8e8e8; --muted: #9aa0a6; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+           font: 16px/1.6 system-ui, sans-serif; }
+    main { max-width: 640px; margin: 10vh auto; padding: 0 1.25rem; }
+    h1 { font-size: 1.5rem; margin-bottom: .25rem; }
+    p  { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Northgate Security Notes</h1>
+    <p>A small blog about network hygiene and home lab experiments.
+       New posts are published occasionally.</p>
+    <p>&copy; 2026 Northgate</p>
+  </main>
+</body>
+</html>
